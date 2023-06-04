@@ -18,7 +18,7 @@ def prediction():
     if request.method == "POST":
         news = str(request.form['news'])
         print(news)
-        predict = model.predict(vector.transform([news]))
+        predict = model.predict(vector.transform([news]))[0]
         print(predict)
         return render_template("prediction.html", prediction_text="News headline is -> {}".format(predict))
 
