@@ -1,230 +1,388 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NewsGuardian</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <script async src="https://cdn.tailwindcss.com"></script>
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script async src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<body>
+  <body>
     <header class="text-gray-600 body-font -my-8">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full"
-                    viewBox="0 0 24 24">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
-                <span class="ml-3 text-xl">NewsGuardian</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a href="/" class="mr-5 hover:text-gray-900">Home</a>
-                <a href="/prediction" class="mr-5 hover:text-gray-900">Prediction</a>
-                <a class="mr-5 hover:text-gray-900">Contact Us</a>
-            </nav>
-            
-        </div>
-    </header><hr>
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+          <span class="ml-3 text-xl">NewsGuardian</span>
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="/" class="mr-5 hover:text-gray-900">Home</a>
+          <a href="/prediction" class="mr-5 hover:text-gray-900">Prediction</a>
+          <a href="/contact" class="mr-5 hover:text-gray-900">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+    <hr />
     <section class="text-gray-600 body-font -my-8">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div
+        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+          >
+            NewsGuardian
+            <br class="hidden lg:inline-block" />
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            NewsGuardian is a cutting-edge fake news detection website designed
+            to empower individuals with accurate information in an era riddled
+            with misinformation. With advanced algorithms, a user-friendly
+            interface, and a commitment to truth, NewsGuardian stands as a
+            reliable ally in navigating the complex landscape of news and
+            ensuring the integrity of information.
+          </p>
+          <div class="flex justify-center">
+            <a href="/prediction"
+              ><button
+                class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg"
+              >
+                Prediction
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="/static/image.svg"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font -my-8">
+      <div class="container px-5 py-24 mx-auto">
+        <h1
+          class="text-3xl font-medium title-font text-gray-900 mb-12 text-center"
+        >
+          Testimonials
+        </h1>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="block w-5 h-5 text-gray-400 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                I got recommended this website by my friend. This platform has
+                become my go-to tool for unraveling the truth. With its
+                intuitive interface and accurate algorithms, it's like having a
+                personal guide to navigate the treacherous jungle of fake news.
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="/static/piyush.jpg"
+                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-top"
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Piyush Gautam</span
+                  >
+                  <span class="text-gray-500 text-sm">Researcher</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="block w-5 h-5 text-gray-400 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                The interface is sleek, intuitive, and user-friendly, making it
+                accessible to individuals of all technological backgrounds.
+                <br /><br />
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="/static/naman1.jpg"
+                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-top"
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Naman Parashar</span
+                  >
+                  <span class="text-gray-500 text-sm"
+                    >WEB DEVELOPER, ANTLER</span
+                  >
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font -my-8">
+      <div class="container px-5 py-24 mx-auto">
+        <h1
+          class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20"
+        >
+          Features of NewsGuardian
+        </h1>
+        <div
+          class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
+        >
+          <div class="p-4 md:w-1/3 flex">
             <div
-                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">NewsGuardian
-                    <br class="hidden lg:inline-block">
-                </h1>
-                <p class="mb-8 leading-relaxed">NewsGuardian is a cutting-edge fake news detection website designed to empower individuals with accurate information in an
-                era riddled with misinformation. With advanced algorithms, a user-friendly interface, and a commitment to truth,
-                NewsGuardian stands as a reliable ally in navigating the complex landscape of news and ensuring the integrity of
-                information.</p>
-                <div class="flex justify-center">
-                    <a href="/prediction"><button
-                        class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Prediction</button></a>
-                    </div>
+              class="w-12 h-12 inline-flex items-center justify-center rounded-full text-purple-500 mb-4 flex-shrink-0"
+            >
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100.000000pt"
+                height="100.000000pt"
+                viewBox="0 0 100.000000 100.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
+                  fill="#000000"
+                  stroke="none"
+                >
+                  <path
+                    d="M423 992 c-35 -11 -63 -40 -63 -66 0 -53 64 -79 174 -70 77 7 142 -6
+174 -34 l21 -17 -25 -37 c-29 -45 -45 -47 -129 -18 -151 52 -294 1 -346 -124
+-21 -52 -23 -54 -50 -44 -38 13 -100 -16 -113 -53 -22 -64 25 -115 103 -112
+34 1 51 -4 73 -22 24 -20 102 -45 143 -45 26 0 26 -20 1 -51 -50 -59 -29 -94
+68 -114 81 -17 108 -33 144 -85 30 -43 87 -80 124 -80 86 0 53 142 -48 205
+l-43 28 43 33 c76 58 136 173 136 262 0 29 3 33 18 27 77 -32 157 -8 168 50
+21 112 -39 200 -151 221 -23 4 -47 17 -58 31 -68 87 -257 146 -364 115z m224
+-66 c34 -16 74 -41 90 -58 l28 -29 -50 28 c-46 26 -59 28 -160 29 -124 1 -158
+8 -153 32 8 41 151 40 245 -2z m226 -130 c57 -24 79 -58 81 -123 1 -54 -1 -58
+-27 -67 -19 -7 -40 -6 -70 3 -82 24 -81 25 -88 -59 -9 -109 -49 -179 -142
+-250 -15 -11 -13 -4 7 35 45 85 30 184 -36 240 -34 29 -46 31 -54 11 -3 -8 10
+-28 31 -48 30 -27 38 -43 42 -80 7 -61 -11 -110 -53 -147 -42 -37 -45 -66 -6
+-74 80 -18 172 -100 172 -154 0 -44 -58 -17 -104 47 -38 53 -97 86 -169 96
+-26 4 -50 11 -53 16 -3 4 6 22 21 40 32 38 30 77 -5 95 -14 7 -52 18 -85 24
+-43 8 -66 19 -86 40 -24 26 -29 27 -62 17 -30 -9 -40 -8 -61 6 -15 9 -26 25
+-26 35 0 44 65 58 104 22 27 -25 46 -12 46 31 0 16 9 45 19 66 53 104 163 138
+296 92 97 -34 142 -25 171 33 35 69 69 82 137 53z"
+                  />
+                  <path
+                    d="M884 706 c-10 -26 4 -48 28 -44 17 2 23 10 23 28 0 18 -6 26 -23 28
+-13 2 -25 -3 -28 -12z"
+                  />
+                  <path
+                    d="M65 849 c-15 -23 15 -30 126 -27 93 2 114 6 114 18 0 12 -21 16 -117
+18 -78 2 -119 -1 -123 -9z"
+                  />
+                  <path
+                    d="M35 770 c-14 -22 10 -30 91 -30 77 0 84 2 84 20 0 18 -7 20 -84 20
+-47 0 -88 -4 -91 -10z"
+                  />
+                  <path
+                    d="M5 690 c-14 -22 13 -31 86 -28 58 2 74 6 74 18 0 12 -16 16 -77 18
+-49 2 -79 -1 -83 -8z"
+                  />
+                </g>
+              </svg>
             </div>
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img class="object-cover object-center rounded" alt="hero" src="/static/image.svg">
+            <div class="flex-grow pl-6">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+                Fast and Efficient
+              </h2>
+              <p class="leading-relaxed text-base">
+                The platform provides quick and efficient fake news detection,
+                allowing users to verify information in real-time and make
+                informed decisions promptly.
+              </p>
             </div>
+          </div>
+          <div class="p-4 md:w-1/3 flex">
+            <div
+              class="w-12 h-12 inline-flex items-center justify-center rounded-full text-purple-500 mb-4 flex-shrink-0"
+            >
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100.000000pt"
+                height="100.000000pt"
+                viewBox="0 0 100.000000 100.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
+                  fill="#000000"
+                  stroke="none"
+                >
+                  <path
+                    d="M230 911 c-46 -15 -85 -39 -116 -73 -54 -57 -69 -95 -69 -178 0 -89
+19 -132 89 -200 26 -25 46 -53 46 -65 0 -21 47 -75 66 -75 5 0 17 -14 26 -30
+10 -17 31 -38 48 -48 16 -9 30 -21 30 -26 0 -15 52 -66 66 -66 7 0 15 -9 19
+-20 8 -27 62 -70 87 -70 22 0 208 179 208 199 0 6 6 11 13 11 16 0 67 52 67
+68 0 7 6 12 13 12 7 0 28 15 46 34 27 27 32 40 28 62 -3 20 4 44 25 81 145
+257 -169 515 -396 326 l-29 -24 -26 24 c-14 14 -42 33 -61 42 -38 20 -142 29
+-180 16z m146 -46 c19 -8 49 -24 65 -36 l30 -21 -60 -63 c-33 -34 -63 -74 -67
+-90 -15 -60 50 -126 111 -111 14 4 57 36 96 73 l70 67 122 -122 121 -121 -24
+-26 c-13 -14 -28 -25 -33 -25 -5 0 -40 30 -78 67 -54 52 -72 64 -81 55 -10
+-10 3 -27 55 -80 37 -37 67 -72 67 -77 0 -5 -10 -19 -22 -32 l-21 -23 -73 71
+c-67 64 -94 78 -94 46 0 -6 30 -42 67 -79 l67 -68 -29 -30 -29 -30 -26 25
+c-14 14 -31 25 -37 25 -6 0 -20 16 -32 35 -11 19 -31 40 -43 46 -13 6 -32 25
+-43 42 -11 17 -31 37 -43 43 -13 7 -32 25 -42 42 -38 61 -79 67 -137 17 l-41
+-35 -37 41 c-83 92 -96 193 -39 286 53 86 170 126 260 88z m381 3 c60 -15 137
+-87 152 -143 20 -72 9 -145 -29 -196 l-19 -24 -121 119 -120 119 -84 -81 c-46
+-45 -92 -82 -101 -82 -26 0 -55 29 -55 55 0 14 32 53 93 112 133 130 176 149
+284 121z m-429 -411 l22 -23 -40 -39 c-33 -32 -44 -37 -57 -29 -38 24 -39 42
+-3 79 40 41 49 43 78 12z m82 -82 l24 -26 -42 -42 -42 -42 -27 28 -27 27 39
+40 c21 22 42 40 45 40 4 0 17 -11 30 -25z m82 -82 c25 -23 23 -34 -17 -73 -37
+-36 -55 -35 -79 3 -8 13 -3 24 24 52 38 40 46 42 72 18z m88 -88 l24 -26 -42
+-42 -42 -42 -27 28 -27 27 39 40 c21 22 42 40 45 40 4 0 17 -11 30 -25z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="flex-grow pl-6">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+                User-Friendly Interface
+              </h2>
+              <p class="leading-relaxed text-base">
+                With an intuitive and user-friendly interface, the website is
+                accessible to individuals of all tech-savviness levels, making
+                it easy for anyone to navigate and utilize its features.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 flex">
+            <div
+              class="w-12 h-12 inline-flex items-center justify-center rounded-full text-purple-500 mb-4 flex-shrink-0"
+            >
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100.000000pt"
+                height="100.000000pt"
+                viewBox="0 0 100.000000 100.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
+                  fill="#000000"
+                  stroke="none"
+                >
+                  <path
+                    d="M455 966 c-42 -18 -83 -69 -91 -112 -14 -75 37 -161 155 -263 116
+-100 114 -99 164 -65 70 49 192 176 217 227 36 78 18 148 -54 201 -40 30 -130
+29 -173 -2 l-33 -23 -31 22 c-38 27 -112 35 -154 15z m152 -70 l33 -36 34 38
+c31 33 39 37 85 37 41 0 55 -5 80 -29 43 -41 50 -88 21 -143 -22 -42 -142
+-164 -194 -198 -24 -16 -28 -16 -51 -1 -50 33 -167 151 -192 193 -20 34 -24
+52 -20 80 17 101 135 135 204 59z"
+                  />
+                  <path
+                    d="M785 370 l-111 -110 -100 1 -99 1 75 18 c107 26 141 80 85 135 -24
+25 -27 25 -195 25 -124 0 -179 -4 -203 -14 -18 -8 -79 -62 -137 -120 l-105
+-106 102 -102 103 -103 43 43 43 42 209 0 209 0 148 148 c162 161 171 179 123
+227 -45 46 -67 36 -190 -85z m165 55 c6 -8 9 -22 6 -33 -3 -10 -64 -75 -134
+-145 l-129 -127 -208 0 -209 0 -38 -37 -38 -37 -78 77 -77 78 92 90 c51 49
+104 94 118 99 15 6 97 10 184 10 133 0 161 -3 172 -16 25 -30 -2 -48 -102 -68
+-52 -11 -96 -21 -98 -23 -3 -2 11 -19 29 -38 l34 -35 105 0 105 0 111 110 c62
+61 119 110 127 110 9 0 21 -7 28 -15z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="flex-grow pl-6">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+                Reliable Results
+              </h2>
+              <p class="leading-relaxed text-base">
+                With its rigorous analysis and cross-referencing of multiple
+                sources, the website delivers reliable and trustworthy results,
+                helping users distinguish between genuine and misleading
+                information.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
-    <section class="text-gray-600 body-font -my-8">
-        <div class="container px-5 py-24 mx-auto">
-            <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
-            <div class="flex flex-wrap -m-4">
-                <div class="p-4 md:w-1/2 w-full">
-                    <div class="h-full bg-gray-100 p-8 rounded">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
-                            viewBox="0 0 975.036 975.036">
-                            <path
-                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                            </path>
-                        </svg>
-                        <p class="leading-relaxed mb-6">I got recommended this website by my friend. This platform has become my go-to tool for unraveling the truth. With its intuitive interface and accurate algorithms, it's like having a personal guide to navigate the treacherous
-                        jungle of fake news.</p>
-                        <a class="inline-flex items-center">
-                            <img alt="testimonial" src="https://dummyimage.com/106x106"
-                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                            <span class="flex-grow flex flex-col pl-4">
-                                <span class="title-font font-medium text-gray-900">Piyush Gautam</span>
-                                <span class="text-gray-500 text-sm">Researcher</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/2 w-full">
-                    <div class="h-full bg-gray-100 p-8 rounded">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
-                            viewBox="0 0 975.036 975.036">
-                            <path
-                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                            </path>
-                        </svg>
-                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry
-                            neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
-                            post-ironic heirloom try-hard pabst authentic iceland.</p>
-                        <a class="inline-flex items-center">
-                            <img alt="testimonial" src="https://dummyimage.com/107x107"
-                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                            <span class="flex-grow flex flex-col pl-4">
-                                <span class="title-font font-medium text-gray-900">Naman Parashar</span>
-                                <span class="text-gray-500 text-sm">WEB DEVELOPER, ANTLER</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="text-gray-600 body-font -my-8">
-        <div class="container px-5 py-24 mx-auto">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Raw Denim Heirloom Man
-                Braid
-                <br class="hidden sm:block">Selfies Wayfarers
-            </h1>
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-                <div class="p-4 md:w-1/3 flex">
-                    <div
-                        class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-4 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                        </svg>
-                    </div>
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
-                        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh
-                            iceland kickstarter tumblr live-edge tilde.</p>
-                        <a class="mt-3 text-purple-500 inline-flex items-center">Learn More
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/3 flex">
-                    <div
-                        class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-4 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                            <circle cx="6" cy="6" r="3"></circle>
-                            <circle cx="6" cy="18" r="3"></circle>
-                            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                        </svg>
-                    </div>
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
-                        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh
-                            iceland kickstarter tumblr live-edge tilde.</p>
-                        <a class="mt-3 text-purple-500 inline-flex items-center">Learn More
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/3 flex">
-                    <div
-                        class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-4 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </div>
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Neptune</h2>
-                        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh
-                            iceland kickstarter tumblr live-edge tilde.</p>
-                        <a class="mt-3 text-purple-500 inline-flex items-center">Learn More
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
     <footer class="text-gray-600 body-font">
-        <div class="bg-gray-100">
-            <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full"
-                        viewBox="0 0 24 24">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                    </svg>
-                    <span class="ml-3 text-xl">NewsGuardian</span>
-                </a>
-                
-                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                    <a class="text-gray-500">
-                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            class="w-5 h-5" viewBox="0 0 24 24">
-                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                        </svg>
-                    </a>
-                    <a class="ml-3 text-gray-500">
-                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            class="w-5 h-5" viewBox="0 0 24 24">
-                            <path
-                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a class="ml-3 text-gray-500">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                        </svg>
-                    </a>
-                    <a class="ml-3 text-gray-500">
-                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                            <path stroke="none"
-                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
-                            </path>
-                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                        </svg>
-                    </a>
-                </span>
-            </div>
+      <div class="bg-gray-100">
+        <div
+          class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col"
+        >
+          <a
+            class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+              ></path>
+            </svg>
+            <span class="ml-3 text-xl">NewsGuardian</span>
+          </a>
         </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
